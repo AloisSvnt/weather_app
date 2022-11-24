@@ -28,13 +28,13 @@ function XHRWeather(){
     });
 
     xhrWeather.send();
-}
+};
 
 function cityToLatLong(){
     let city = document.querySelector('.city').textContent;
     const xhrCityLatLong = new XMLHttpRequest();
     xhrCityLatLong.open('get', `https://api.api-ninjas.com/v1/geocoding?city=${city}/`);
-    xhrCityLatLong.setRequestHeader('X-Api-Key', 'FJr6+xTIKd3pmcyfBZoSvw==vbuT0TGpT9bfJcUt')
+    xhrCityLatLong.setRequestHeader('X-Api-Key', 'FJr6+xTIKd3pmcyfBZoSvw==vbuT0TGpT9bfJcUt');
 
     xhrCityLatLong.addEventListener('load', function() {
         // console.log('LOAD'+ xhrCityLatLong.status);
@@ -66,9 +66,23 @@ function getCityUser(){
 
 }
 
+// remove & add class in DOM HTML
+function weatherCodeEffect(){
+
+    const xhrWeatherCode = XMLHttpRequest();
+    xhrWeatherCode.open('get', `https://api.api-ninjas.com/v1/geocoding?city=${city}/`);
+    xhrCityLatLong.setRequestHeader('X-Api-Key', 'FJr6+xTIKd3pmcyfBZoSvw==vbuT0TGpT9bfJcUt');
+
+    xhrWeatherCode.addEventListener('load', function(){
+        console.log(xhrWeatherCode);
+    })
+
+}
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("LANCEMENT DE L'APP");
     cityToLatLong();
     getCityUser();
+    console.log("LANCEMENT DE L'APP");
 });
