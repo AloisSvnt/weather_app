@@ -1,0 +1,159 @@
+/* IMPORT POLICE */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* IMPORT WEATHER ICONS */
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Trebuchet MS';
+    height: 100vh;
+    display: flex;
+}
+
+.container-app{
+    width: 500px;
+    margin:auto;
+    padding: 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 8px 11px 29px -8px rgba(0,0,0,0.41), 15px 15px 15px -5px rgba(255,255,255,0.1) inset;
+}
+
+.container-app>h1{
+    font-size: 4em;
+    font-weight: 600;
+    margin: 0.6em 0 0.2em 0;
+    text-transform: uppercase;
+}
+
+.icone{
+    height: 200px;
+    width: 200px;
+    align-self: center;
+}
+
+.p-icone{
+    margin: 0;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.container-app>h2{
+    font-size: 5em;
+    font-weight: 300;
+    margin: 0.2em 0 0.6em 0;
+}
+
+.btn-change-city{
+    margin: 0.6rem 0;
+    width: 200px;
+    align-self: center;
+    padding: 16px;
+    border: solid #888 0.5px;
+    background-color: #ddd;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* FOND DE L'APP EN FONCTION DE LA METEO */
+.sunny-sky{
+    background-image: url(img/ciel-degage.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rainy-sky{
+    background-image: url(img/ciel-pluie.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.covered-sky{
+    background-image: url(img/ciel-couvert.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.snowy-sky{
+    background-image: url(img/ciel-neige.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stormy-sky{
+    background-image: url(img/ciel-orage.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foggy-sky{    
+    background-image: url(img/ciel-brouillard.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ICONE DE l'APP EN FONCTION DE LA METEO */
+
+.icone-sunny{
+    background: url('weather-icons/icone-sunny.svg');
+    background-size: cover;
+}
+
+.icone-rainy{
+    background: url('weather-icons/icone-rainy.svg');
+    background-size: cover;
+}
+
+.icone-stormy{
+    background: url('weather-icons/icone-stormy.svg');
+    background-size: cover;
+}
+
+.icone-snowy{
+    background: url('weather-icons/icone-snowy.svg');
+    background-size: cover;
+}
+
+.icone-foggy{
+    background: url('weather-icons/icone-foggy.svg');
+    background-size: cover;
+}
+
+.icone-covered{
+    background: url('weather-icons/icone-covered.svg');
+    background-size: cover;
+}
+
+.icone-cloudy{
+    background: url('weather-icons/icone-sunny.svg');
+    background-size: cover;
+}
+
+
+
+
+
+.d-flex{
+    display: flex;
+}
+
+.fd-column{
+    flex-direction: column;
+}
